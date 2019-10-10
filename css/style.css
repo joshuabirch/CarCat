@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(../assets/login-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-text {
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+#inputName {
+  margin: 0px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#inputEmail, #inputPassword {
+  border-radius: 0;
+}
+
+#inputCPassword {
+  margin: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#email {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#password {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-primary {
+  background-color: #fbf39d;
+  border: none;
+  color: #000;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #ff3f9b;
+  transition: all ease 500ms; 
+}

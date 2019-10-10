@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+}
+
+.navbar {
+    background-color: #ff3f9b;
+    color: black;
+}
+
+.navbar-brand {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.nav-link {
+    font-family: 'Archivo Black', sans-serif;
+    color: #212529!important;
+}
+
+.nav-item {
+    border: 3px solid transparent;
+    box-sizing: border-box;
+}
+
+.nav-item:hover {
+    border: 3px solid #fff;
+
+}
+
+
+#welcome-card {
+    background-image: url(../assets/index-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.wrapper {
+    padding-top: 170px;
+    padding-left: 79px;
+}
+
+.wrapper h1 {
+    width: 50%;
+    text-align: left;
+    font-size: 4vw;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.btn-signup {
+    background-color: #ff3f9b;
+    color: #fff;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.5vw;
+    margin-top: 20px;
+    padding: 10px;
+    width: 25%;
+}
+
+.btn-signup:hover {
+    box-shadow: -5px 5px #fff;
+    color: #fff;
+}
