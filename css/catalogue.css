@@ -1,0 +1,119 @@
+.navbar {
+    background-color: #ff3f9b;
+    color: black;
+  }
+  
+.navbar-brand {
+font-family: 'Archivo Black', sans-serif;
+}
+
+.nav-link {
+font-family: 'Archivo Black', sans-serif;
+color: #212529!important;
+}
+
+.nav-item {
+border: 3px solid transparent;
+box-sizing: border-box;
+}
+
+.nav-item:hover {
+    border-radius: 10px;
+    border: 3px solid #fff;
+
+}
+
+#welcome-text {
+    padding: 50px;
+    -webkit-text-decoration-style: wavy;
+    -moz-text-decoration-style: wavy;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#inputSearch {
+    float: left;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-right: none;
+    border-radius: .25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 20px;
+    width: 90%;
+}
+
+#inputSearch::placeholder {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#searchBtn {
+    float: right;
+    padding: 21px;
+    border: none;
+    background-color: #ff3f9b;
+    border-radius: .25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 10%;
+}
+
+#searchBtn:hover {
+    background-color: #fbf39d;
+    transition: all 50ms ease-in-out;
+}
+
+.card-title {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: capitalize;
+}
+
+.card-text {
+    text-transform: capitalize;
+}
+
+#favBtn {
+    background-color: #fbf39d;
+    color: #212529;
+    font-family: 'Archivo Black', sans-serif;
+    border: 1px solid grey;
+}
+
+#favBtn:hover {
+    background-color: #ff3f9b;
+    color: #fff;
+    transition: all 100ms ease-in-out;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #inputSearch {
+        width: 80%;
+    }
+
+    #searchBtn {
+        width: 20%;
+    }
+}
+
+/* /*Small devices (landscape phones, 576px and up)  */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #inputSearch {
+        width: 80%;
+    }
+
+    #searchBtn {
+        width: 20%;
+    }
+}
+/* 
+// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+/* 
+// Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }

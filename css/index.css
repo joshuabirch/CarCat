@@ -23,7 +23,12 @@ html, body {
 
 .nav-item:hover {
     border: 3px solid #fff;
+    border-radius: 10px;
 
+}
+
+.dropdown-menu a {
+    font-family: 'Archivo Black', sans-serif;
 }
 
 
@@ -36,21 +41,22 @@ html, body {
 
 .wrapper {
     padding-top: 170px;
-    padding-left: 79px;
+    padding-left: 4vw;
 }
 
 .wrapper h1 {
     width: 50%;
     text-align: left;
-    font-size: 4vw;
+    font-size: 62px;
     font-family: 'Archivo Black', sans-serif;
+    text-shadow: -4px 4px #fff;
 }
 
 .btn-signup {
     background-color: #ff3f9b;
     color: #fff;
     font-family: 'Archivo Black', sans-serif;
-    font-size: 1.5vw;
+    font-size: 20px;
     margin-top: 20px;
     padding: 10px;
     width: 25%;

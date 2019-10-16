@@ -4,16 +4,35 @@ body {
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
   background-image: url(../assets/login-bg.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
+
+.navbar {
+  background-color: #ff3f9b;
+  color: black;
+}
+
+.navbar-brand {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.nav-link {
+  font-family: 'Archivo Black', sans-serif;
+  color: #212529!important;
+}
+
+.nav-item {
+  border: 3px solid transparent;
+  box-sizing: border-box;
+}
+
+.nav-item:hover {
+  border: 3px solid #fff;
+  border-radius: 10px;
+
 }
 
 .welcome-text {
@@ -21,10 +40,18 @@ body {
   text-align: center;
 }
 
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .form-signin {
   width: 100%;
   max-width: 330px;
-  padding: 15px;
+  padding-top: 50px;
+  padding-bottom: 15px;
   margin: auto;
 }
 .form-signin .checkbox {
@@ -39,6 +66,19 @@ body {
 }
 .form-signin .form-control:focus {
   z-index: 2;
+}
+
+.error {
+  padding: 10px;
+  border-radius: .25rem;
+  background-color: #dd7c7c;
+  border: solid 1px crimson;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.error p {
+  margin-bottom: 0;
 }
 
 #inputName {
@@ -72,6 +112,7 @@ body {
   border: none;
   color: #000;
   font-family: 'Archivo Black', sans-serif;
+  margin-top: 20px;
 }
 
 .btn-primary:hover {
