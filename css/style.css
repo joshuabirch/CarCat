@@ -10,6 +10,60 @@ body {
   background-position: center;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fbf39d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #212529;
+  display: block;
+  transition: all 50ms ease-in-out;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.sidenav a:hover {
+  background-color: #ff3f9b;
+  color: #fff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-align: right!important;
+}
+
+.profile-img-nav {
+  height: 75px;
+  padding: 8px 8px 8px 32px;
+}
+
+.closebtn:hover {
+  background-color: transparent!important;
+  color: #ff3f9b!important;
+}
+
+.content {
+  transition: opacity .5s;
+}
+
+#content {
+  transition: margin-right .5s;
+}
+
 .navbar {
   background-color: #ff3f9b;
   color: black;
@@ -27,11 +81,14 @@ body {
 .nav-item {
   border: 3px solid transparent;
   box-sizing: border-box;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .nav-item:hover {
-  border: 3px solid #fff;
-  border-radius: 10px;
+  text-shadow: -1px 1px #fff;
 
 }
 
@@ -81,6 +138,8 @@ body {
   margin-bottom: 0;
 }
 
+
+
 #inputName {
   margin: 0px;
   border-bottom-left-radius: 0;
@@ -88,7 +147,7 @@ body {
 }
 
 #inputEmail, #inputPassword {
-  border-radius: 0;
+  /* border-radius: 0; */
 }
 
 #inputCPassword {

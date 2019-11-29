@@ -1,0 +1,225 @@
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fbf39d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+}
+
+.user-info {
+    background-color: #fff;
+    background-image: url("../assets/sidebar-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+.profile-img-nav {
+    height: 75px;
+    padding: 8px 8px 8px 32px;
+}
+
+.sidenav h1 {
+    font-family: 'Archivo Black', sans-serif;
+    padding: 8px 8px 8px 32px;
+    width: 75%;
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #212529;
+    display: block;
+    transition: all 50ms ease-in-out;
+    font-family: 'Archivo Black', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.sidenav a:hover {
+    background-color: #ff3f9b;
+    color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    background-color: transparent;
+    padding: 20px;
+    border: none;
+    transition: color 100ms ease-in-out;
+    text-align: right!important;
+}
+
+.closebtn:hover {
+    background-color: transparent!important;
+    color: #ff3f9b!important;
+    
+}
+
+.content {
+    transition: opacity .5s;
+}
+
+#content {
+    transition: margin-right .5s;
+}
+
+.navbar {
+    background-color: #ff3f9b;
+    color: black;
+  }
+  
+.navbar-brand {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.nav-link {
+    font-family: 'Archivo Black', sans-serif;
+    color: #212529!important;
+}
+
+.nav-item {
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.nav-link:hover {
+    text-shadow: -1px 1px #fff!important;
+
+}
+
+
+
+#welcome-text {
+    text-shadow: -3px 3px #fff;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.error {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: #fbf39d;
+}
+
+#welcome-text {
+    text-shadow: -3px 3px #fff;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.supp-text {
+    font-size: 24px;
+}
+
+.bg-grey {
+    background-color:#eee!important;
+}
+
+.list-group-flush {
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0;
+}
+
+.list-group-item a {
+    font-family: 'Archivo Black', sans-serif;
+    color: #212529;
+    text-decoration: none!important;
+}
+
+.list-group-item:hover {
+    color: #fff;
+    background-color: #ff3f9b!important;
+}
+
+.list-group-item a:hover {
+    color: #fff!important;
+    background-color: #ff3f9b;
+}
+
+.active {
+    background-color: #ff3f9b!important;
+    color: #fff;
+}
+
+.form-title {
+    font-family: "Archivo Black", sans-serif;
+    text-shadow: -2px 2px #ff3f9b;
+}
+
+
+
+.btn-submit {
+    background-color: #ff3f9b;
+    color: #fff;
+    font-family: 'Archivo Black', sans-serif;
+    padding: .375rem .75rem!important;
+}
+
+.btn-submit:hover {
+    background-color: #b62b6e;
+    color: #fff;
+}
+
+#inputName {
+    border-top-right-radius: 0!important;
+}
+
+#inputEmail {
+    border-top-left-radius: 0!important;
+    border-bottom-right-radius: 0;
+}
+
+#inputPhoneNo {
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+}
+
+#currentPassword {
+    border-bottom-left-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+
+#confirmNewPassword {
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+}
+
+.btn-delete {
+    background-color: #ff3f9b;
+    color: #fff;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.btn-delete:hover {
+    color: #fff!important;
+    background-color: #b62b6e;
+}
+
+.footer {
+    background-color: #fbf39d;
+}
+
+.footer h3 {
+    font-family: "Archivo Black", sans-serif;
+    color: #212529;
+}

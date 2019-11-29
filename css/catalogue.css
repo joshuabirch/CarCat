@@ -1,35 +1,130 @@
+html, body {
+    overflow-x: hidden;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fbf39d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+}
+
+.user-info {
+    background-color: #fff;
+    background-image: url("../assets/sidebar-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+
+.sidenav h1 {
+    font-family: 'Archivo Black', sans-serif;
+    padding: 8px 8px 8px 32px;
+    width: 75%;
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #212529;
+    display: block;
+    transition: all 50ms ease-in-out;
+    font-family: 'Archivo Black', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.sidenav a:hover {
+    background-color: #ff3f9b;
+    color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    background-color: transparent;
+    padding: 20px;
+    border: none;
+    transition: color 100ms ease-in-out;
+    text-align: right!important;
+}
+
+.profile-img-nav {
+    height: 75px;
+    padding: 8px 8px 8px 32px;
+}
+
+.closebtn:hover {
+    background-color: transparent!important;
+    color: #ff3f9b!important;
+    
+}
+
+.content {
+    transition: opacity .5s;
+}
+
+#content {
+    transition: margin-right .5s;
+}
+
 .navbar {
     background-color: #ff3f9b;
     color: black;
   }
   
 .navbar-brand {
-font-family: 'Archivo Black', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 .nav-link {
-font-family: 'Archivo Black', sans-serif;
-color: #212529!important;
+    font-family: 'Archivo Black', sans-serif;
+    color: #212529!important;
 }
 
 .nav-item {
-border: 3px solid transparent;
-box-sizing: border-box;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
-.nav-item:hover {
-    border-radius: 10px;
-    border: 3px solid #fff;
+.nav-link:hover {
+    text-shadow: -1px 1px #fff!important;
 
+}
+
+#search-area {
+    margin-top: -50px;
+}
+
+.error {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #fbf39d;
 }
 
 #welcome-text {
-    padding: 50px;
-    -webkit-text-decoration-style: wavy;
-    -moz-text-decoration-style: wavy;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
+    text-shadow: -3px 3px #fff;
     font-family: 'Archivo Black', sans-serif;
+}
+
+.supp-text {
+    font-size: 24px;
 }
 
 #inputSearch {
@@ -58,33 +153,115 @@ box-sizing: border-box;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     width: 10%;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 #searchBtn:hover {
+    background-color: #b62b6e;
+    
+}
+
+.btn-fave-toggle {
+    background-color: #ff3f9b;
+    color: #fff;
+}
+
+.recent-search-tab {
+    float: left;
+    display: inline-block;
     background-color: #fbf39d;
-    transition: all 50ms ease-in-out;
+    border: solid 1px #fbf39d;
+    border-bottom-left-radius: .25rem;
+    border-top-left-radius: .25rem;
+}
+
+
+.btn-save-search {
+    float: left;
+    background-color: #ff3f9b;
+    color: white;
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+
+.btn-save-search:hover {
+    background-color: #b62b6e;
+    color: #fff;
+}
+
+.btn-delete-search {
+    float: left;
+    background-color: #ff3f9b;
+    color: white;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+}
+
+.btn-delete-search:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.btn-delete-search {
+    padding: 10px;
 }
 
 .card-title {
     font-family: 'Archivo Black', sans-serif;
     text-transform: capitalize;
+    text-shadow: -2px 2px #ff3f9b;
 }
 
 .card-text {
     text-transform: capitalize;
 }
 
-#favBtn {
+.fave {
     background-color: #fbf39d;
     color: #212529;
     font-family: 'Archivo Black', sans-serif;
-    border: 1px solid grey;
+    border: none;
 }
 
-#favBtn:hover {
-    background-color: #ff3f9b;
+.fave:hover {
+    background-color: rgb(7, 212, 0);
     color: #fff;
     transition: all 100ms ease-in-out;
+}
+
+.unfave {
+    background-color: #ff3f9b;
+    border: none!important;
+    color: white;
+}
+
+.unfave:hover {
+    background-color: #ff0000;
+    transition: all 100ms ease-in-out;
+}
+
+.lock:hover .icon-unlock,
+.lock .icon-lock {
+    display: none;
+}
+.lock:hover .icon-lock {
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    background-color: #fbf39d;
+}
+
+.footer h3 {
+    font-family: "Archivo Black", sans-serif;
+    color: #212529;
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -108,12 +285,3 @@ box-sizing: border-box;
         width: 20%;
     }
 }
-/* 
-// Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
-/* 
-// Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }

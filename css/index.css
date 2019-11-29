@@ -2,6 +2,86 @@ html, body {
     height: 100%;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fbf39d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+}
+
+.user-info {
+    background-color: #fff;
+    background-image: url("../assets/sidebar-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+
+.sidenav h1 {
+    font-family: 'Archivo Black', sans-serif;
+    padding: 8px 8px 8px 32px; 
+    width: 75%;
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #212529;
+    display: block;
+    transition: all 50ms ease-in-out;
+    font-family: 'Archivo Black', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.sidenav a:hover {
+    background-color: #ff3f9b;
+    color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 20px;
+    border: none;
+    text-align: right!important;
+}
+
+.closebtn:hover {
+    background-color: transparent!important;
+    color: #ff3f9b!important;
+}
+
+.profile-img-nav {
+    height: 75px;
+    padding: 8px 8px 8px 32px;
+}
+
+.content {
+    transition: opacity .5s;
+    background-image: url(../assets/index-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+#content {
+    transition: margin-right .5s;
+}
+
+
 .navbar {
     background-color: #ff3f9b;
     color: black;
@@ -19,11 +99,14 @@ html, body {
 .nav-item {
     border: 3px solid transparent;
     box-sizing: border-box;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .nav-item:hover {
-    border: 3px solid #fff;
-    border-radius: 10px;
+    text-shadow: -1px 1px #fff;
 
 }
 
@@ -31,17 +114,8 @@ html, body {
     font-family: 'Archivo Black', sans-serif;
 }
 
-
-#welcome-card {
-    background-image: url(../assets/index-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-}
-
 .wrapper {
-    padding-top: 170px;
-    padding-left: 4vw;
+    padding-top: 16rem!important;
 }
 
 .wrapper h1 {
@@ -65,4 +139,36 @@ html, body {
 .btn-signup:hover {
     box-shadow: -5px 5px #fff;
     color: #fff;
+}
+
+
+@media (max-width: 575.98px) {
+    .wrapper {
+        padding-top: 13rem!important;
+    }
+    .content {
+        background-image: url("../assets/login-bg-mb.jpg");
+        background-size: cover;
+    }
+
+    .wrapper h1 {
+        font-size: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-signup {
+        width: 100%;
+    }
+}
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 1199.98px) {
+
 }
