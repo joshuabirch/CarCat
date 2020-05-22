@@ -10,7 +10,7 @@ $success = array();
 
 //connect to database
 
-$db = mysqli_connect ('joshbirchdesign.co.uk.mysql', 'joshbirchdesign_co_uk_carcat', 'CarCat!1234','joshbirchdesign_co_uk_carcat');
+$db = mysqli_connect ('', '', '','');
 
 //register a user
 if (isset($_POST['signup'])) {
